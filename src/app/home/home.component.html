@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="recipes else loader" >
   <!-- <img
     src="../../assets/Images/Illustration2.png"
     id="top-img"
@@ -49,3 +49,13 @@
     alt="background-image"
   /> -->
 </div>
+
+<ng-template #loader>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="display-4">
+      Loading haked recipes...
+    </div>
+  </div>
+
+  </ng-template>

@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://starlord.hackerearth.com",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": "http://starlord.hackerearth.com"
+    },
+    "changeOrigin": true
+  }
+}

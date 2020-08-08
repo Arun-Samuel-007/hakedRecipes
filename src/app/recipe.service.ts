@@ -6,14 +6,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RecipeService {
-
+  url = '/api/recipe';
   constructor(private http: HttpClient) { }
 
   getRecipes() {
-    return this.http.get('http://starlord.hackerearth.com/recipe',{headers:{'Access-Control-Allow-Origin': "*"}});
+    return this.http.get(this.url);
   }
 
   getParticularRecipe() {
-    return this.http.get('http://starlord.hackerearth.com/recipe',{headers:{'Access-Control-Allow-Origin': "*"}}).toPromise();
+    return this.http.get(this.url).toPromise();
   }
 }

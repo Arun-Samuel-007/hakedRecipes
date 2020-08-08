@@ -1,4 +1,4 @@
-<div class="details container" *ngIf="recipe">
+<div class="details container" *ngIf="recipe else loader">
   <div class="row" style="padding: 50px;">
     <div class="col-md-6">
       <div class="row">
@@ -97,3 +97,13 @@
     </div>
   </div>
 </div>
+
+<ng-template #loader>
+
+<div class="d-flex justify-content-center align-items-center">
+  <div class="display-4">
+    Loading your recipe...
+  </div>
+</div>
+
+</ng-template>
