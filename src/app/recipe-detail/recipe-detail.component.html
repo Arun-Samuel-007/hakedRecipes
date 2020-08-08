@@ -1,0 +1,99 @@
+<div class="details container" *ngIf="recipe">
+  <div class="row" style="padding: 50px;">
+    <div class="col-md-6">
+      <div class="row">
+        <img [src]="recipe.image" alt="recipe-image" />
+      </div>
+    </div>
+    <div class="col-md-6 right-top">
+      <div class="row">
+        <div class="col-md-12">
+          <div><h4>Recipe</h4></div>
+          <div><h1>{{recipe.name}}</h1></div>
+          <div class="rating"><span>4.5</span><span>star star star</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div>Description</div>
+          <div>
+            {{recipe.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding: 50px;">
+    <div class="col-md-6 second-row-left">
+      <h4>Ingredients</h4>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem
+      corrupti placeat repudiandae dolore, quae consectetur quisquam error at.
+      Quod dolore maxime atque id consequuntur odit, fugit libero magni
+      voluptatibus.Exercitationem, perspiciatis dolore iusto porro aut modi
+      aliquam nesciunt numquam voluptatibus corrupti maxime ab. Commodi culpa
+      nihil dolor assumenda rerum odit sunt nemo voluptatum autem beatae quasi
+      soluta, repellendus magni.
+    </div>
+    <div class="col-md-6 second-row-right">
+      <div class="row">
+        <div class="circles">
+          <div class="circle">
+            <div>8</div>
+            <div>ingredients</div>
+          </div>
+          <div class="circle">
+            <div>{{recipe.price}}</div>
+            <div>bucks</div>
+          </div>
+          <div class="circle">
+            <div>25</div>
+            <div>minutes</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        style="align-self: flex-end; position: relative; right: 35px;"
+      >
+        <div>Favourite this recipe</div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding: 50px;">
+    <div class="col-md-6">
+      <h4>How to prepare:</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+        perferendis provident voluptate vitae voluptatibus, recusandae ipsa
+        quidem adipisci libero nobis molestiae suscipit, facere sed nesciunt
+        reiciendis quo doloremque harum qui.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+        perferendis provident voluptate vitae voluptatibus, recusandae ipsa
+        quidem adipisci libero nobis molestiae suscipit, facere sed nesciunt
+        reiciendis quo doloremque harum qui.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+        perferendis provident voluptate vitae voluptatibus, recusandae ipsa
+        quidem adipisci libero nobis molestiae suscipit, facere sed nesciunt
+        reiciendis quo doloremque harum qui.
+      </p>
+    </div>
+    <hr />
+    <div class="col-md-6" style="padding-top: 10px; border-top: 1px solid;">
+      <label for="comments">Add comments</label>
+      <textarea
+        name="comments"
+        id="comments"
+        cols="61"
+        rows="8"
+        placeholder="Type something here..."
+        class="form-conrtol"
+        style="border-radius: 30px; padding: 21px 20px;"
+      ></textarea>
+      <button class="btn btn-dark w-100">Add comment</button>
+    </div>
+  </div>
+</div>

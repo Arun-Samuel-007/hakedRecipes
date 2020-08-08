@@ -1,0 +1,51 @@
+.container{
+  margin-top: 15rem;
+}
+
+.recipe-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.recipe-category {
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+  background: black;
+  color: white;
+  padding: 2px 39px;
+  border-radius: 0 0 0 25px;
+}
+
+.recipe-list {
+  padding: 0px;
+  border: none;
+  padding: 5px;
+  height: fit-content;
+  border-radius: 39px;
+}
+
+.recipe-black-card {
+  border-radius: 39px;
+  background: black;
+  overflow: auto;
+  color: white;
+  border: none;
+}
+
+.recipe-white-card {
+  border-radius: 39px;
+  background: white;
+  overflow: auto;
+  border: none;
+}
+
+.card-black-feather {
+  box-shadow: 0 0 20px 25px black;
+  padding-top: 0;
+}
+
+.card-white-feather {
+  box-shadow: 0 0 20px 25px white;
+  padding-top: 0;
+}

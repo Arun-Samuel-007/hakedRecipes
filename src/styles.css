@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+/* @font-face {
+  font-family: "Recipe Fonts";
+  src: url("./assets/Fonts/Metropolis/Metropolis-Black.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-Black.otf"),
+    url("./assets/Fonts/Metropolis/Metropolis-BlackItalic.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-BoldItalic.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-ExtraBold.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-ExtraBoldItalic.otf")
+      format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-ExtraLight.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-ExtraLightItalic.otf")
+      format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-Light.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-LightItalic.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-Medium.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-MediumItalic.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-Regular.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-RegularItalic.otf")
+      format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-SemiBold.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-SemiBoldItalic.otf")
+      format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-Thin.otf") format("woff2"),
+    url("./assets/Fonts/Metropolis/Metropolis-ThinItalic.otf") format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  font-family: "Recipe Fonts";
+} */

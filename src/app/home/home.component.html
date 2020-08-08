@@ -1,0 +1,51 @@
+<div class="container">
+  <!-- <img
+    src="../../assets/Images/Illustration2.png"
+    id="top-img"
+    alt="background-image"
+  /> -->
+  <!-- <input type="text" placeholder="Search your favourite recipe..." />
+  <span class="category">Category</span>
+  <h1>Pizza & Noodles</h1> -->
+  <ul class="list-group">
+    <div class="row">
+      <li *ngFor="let recipe of recipes;index as i" class="list-group-item col-md-3 recipe-list" [routerLink]="'/recipes/'+i">
+        <div class="card" [class.recipe-black-card]="(i%2)==0" [class.recipe-white-card]="(i%2)!=0">
+          <div class="recipe-category">In {{ recipe.category }}</div>
+          <img
+            class="card-img-top"
+            [src]="recipe.image"
+            alt="recipe-image"
+            sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"
+          />
+          <div class="card-body" [class.card-black-feather]="(i%2)==0" [class.card-white-feather]="(i%2)!=0">
+            <div class="card-title">{{ recipe.name }}</div>
+            <div class="card-subtitle">{{ recipe.price }}</div>
+            <div class="card-text">{{ recipe.description }}</div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </ul>
+  <!--
+  <img
+    src="../../assets/Images/Illustration3.png"
+    id="bottom-img"
+    alt="background-image"
+  />
+  <img
+    src="../../assets/Images/Illustration5.png"
+    id="bottom-img"
+    alt="background-image"
+  />
+  <img
+    src="../../assets/Images/Illustration4.png"
+    id="bottom-img"
+    alt="background-image"
+  />
+  <img
+    src="../../assets/Images/Illustration1.png"
+    id="bottom-img"
+    alt="background-image"
+  /> -->
+</div>
