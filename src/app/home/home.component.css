@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 }
 
+li:focus{
+  outline: none;
+}
+
 .recipe-category {
   width: fit-content;
   position: absolute;

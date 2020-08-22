@@ -3,8 +3,8 @@
     "target": "http://starlord.hackerearth.com",
     "secure": false,
     "pathRewrite": {
-      "^/api": "http://starlord.hackerearth.com"
+      "^/api": "http://starlord.hackerearth.com/recipes"
     },
-    "changeOrigin": true
+    "changeOrigin": false
   }
 }

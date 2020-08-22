@@ -17,9 +17,15 @@ export class HomeComponent implements OnInit {
   }
 
   getAllRecipes() {
-    this.recipeService.getRecipes().subscribe((recipes: Recipe[]) => {
-      this.recipes = recipes;
-      console.log(recipes);
-    });
+    this.recipeService.getRecipes().then(res => res.json()).then(
+      (recipes: Recipe[]) => {
+        this.recipes = recipes;
+        console.log(recipes);
+       }
+    ).catch(err => console.log(err));
+    // .subscribe((recipes: Recipe[]) => {
+      // this.recipes = recipes;
+      // console.log(recipes);
+    // });
   }
 }

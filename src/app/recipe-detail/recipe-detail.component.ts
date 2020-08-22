@@ -20,10 +20,16 @@ export class RecipeDetailComponent implements OnInit {
     this.activatedRoute.params.subscribe((param: Params) => {
       this.id = param.id;
       console.log(this.id);
-      this.recipeService.getParticularRecipe().then((recipes: Recipe[]) => {
+      this.recipeService.getParticularRecipe().then(res => res.json())
+      .then((recipes: Recipe[]) => {
         console.log(recipes);
         this.recipe = recipes[param.id];
-      });
+      })
+      .catch(err => console.log(err));
+      // .then(recipes: Recipe[]) => {
+        // console.log(recipes);
+        // this.recipe = recipes[param.id];
+      // });
     });
   }
 
